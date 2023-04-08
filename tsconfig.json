@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "isolatedModules": false,
+    "noEmit": false,
+    "lib": ["dom", "ES2021"],
+    "module": "commonjs",
+    "target": "esnext",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+  },
+  "include": ["src/**/*.ts"]
+}
