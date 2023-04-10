@@ -8,8 +8,8 @@ const app = async () => {
   // const RedisStore = ConnectRedis(Session)
   const redis = new Redis(process.env.REDIS || '')
   const session = Session({
-    // store: new RedisStore({
-    store: RedisStore({
+    // store: RedisStore({
+    store: new RedisStore({
       client: redis
     }),
     secret: process.env.SECRET || ''
